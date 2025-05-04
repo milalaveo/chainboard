@@ -265,7 +265,11 @@ export default function ChainBoard() {
             </svg>
 
             {isPresenting && (
-                <PresentationModal nodes={nodes} onClose={() => setIsPresenting(false)} />
+                <PresentationModal
+                    nodes={nodes}
+                    links={links}
+                    onClose={() => setIsPresenting(false)}
+                />
             )}
         </div>
     );
